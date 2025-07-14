@@ -3,6 +3,8 @@
 OpenNSA
 -------
 
+**Attention**: This is a fork from https://github.com/NORDUnet/opennsa/
+
 OpenNSA is an implementation of the Network Service Interface (NSI).
 
 NSI (Network Service Interface) is a technology agnostic protocol for
