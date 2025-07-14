@@ -9,6 +9,7 @@
 
 """
 
+import string
 import random
 import json
 import traceback
@@ -419,7 +420,7 @@ class KytosConnectionManager:
         return self.port_map[port] + "#" + str(vlan)
 
     def createConnectionId(self, source_target, dest_target):
-        return "Kytos-" + str(random.randint(100000, 999999))
+        return "K-" + ''.join( [ random.choice(string.hexdigits[:16]) for _ in range(8) ] )
 
     def canSwapLabel(self, label_type):
         return True
